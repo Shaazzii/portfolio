@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header Section */
+        .header {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            width: 100%;
+        }
+
+        /* Main Content Section */
+        .main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .skills-container {
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        .skills-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .skills-header h1 {
+            font-size: 40px;
+            color: #007bff;
+        }
+
+        .skills-header p {
+            font-size: 18px;
+            color: gray;
+        }
+
+        /* Categories */
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .category {
+            flex: 1;
+            min-width: 350px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            font-size: 30px;
+            margin-right: 15px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 22px;
+        }
+
+        p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: gray;
+        }
+
+        /* Skill Bars */
+        .skills {
+            width: 100%;
+            margin-top: 40px;
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .skill span {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+
+        .bar {
+            width: 100%;
+            background: #ddd;
+            height: 15px;
+            border-radius: 7px;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+        }
+
+        .html { width: 70%; background: #E34F26; }
+        .css { width: 55%; background: #1572B6; }
+        .jquery { width: 50%; background: #0769AD; }
+        .php { width: 40%; background: #777BB4; }
+        .wordpress { width: 75%; background: #23282D; }
+        .seo { width: 100%; background: #28a745; }
+        .photoshop { width: 70%; background: #31A8FF; }
+
+        /* Footer */
+        .footer {
+            background: #007bff;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .category-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+
+    <div class="main">
+        <div class="skills-container">
+            <div class="skills-header">
+                <h1>My Skills</h1>
+                <p>I Like To Craft Beautiful And Scalable Web Products</p>
+            </div>
+
+            <!-- Categories -->
+            <div class="category-container">
+                <div class="category">
+                    <div class="icon">🎨</div>
+                    <div>
+                        <h3>Design + Development</h3>
+                        <p>Clean, modern designs - optimized for performance, search engines, and conversions.</p>
+                    </div>
+                </div>
+                
+                <div class="category">
+                    <div class="icon">💻</div>
+                    <div>
+                        <h3>Technology</h3>
+                        <p>Combining the latest technologies into a progressive website.</p>
+                    </div>
+                </div>
+
+                <div class="category">
+                    <div class="icon">📱</div>
+                    <div>
+                        <h3>Always Responsive</h3>
+                        <p>Ensuring accessibility for all users, on any device.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skills List -->
+            <div class="skills">
+                <div class="skill"><span>HTML5</span><div class="bar"><div class="progress html"></div></div></div>
+                <div class="skill"><span>CSS3</span><div class="bar"><div class="progress css"></div></div></div>
+                <div class="skill"><span>jQuery</span><div class="bar"><div class="progress jquery"></div></div></div>
+                <div class="skill"><span>PHP</span><div class="bar"><div class="progress php"></div></div></div>
+                <div class="skill"><span>WordPress</span><div class="bar"><div class="progress wordpress"></div></div></div>
+                <div class="skill"><span>SEO</span><div class="bar"><div class="progress seo"></div></div></div>
+                <div class="skill"><span>Photoshop</span><div class="bar"><div class="progress photoshop"></div></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">© 2025 My Skills Portfolio. All Rights Reserved.</div>
+
+</body>
+</html>

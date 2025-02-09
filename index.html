@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: white;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #66c2ff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 14px;
+    color: gray;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Profile section */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 900px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 40px;
+}
+
+.info {
+    text-align: left;
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    margin-top: 20px;
+}
+
+.btn {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 50%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.resume {
+    background-color: #a0d468;
+}
+
+.research {
+    background-color: #ffcc33;
+}
+
+.outreach {
+    background-color: #66d9ef;
+}
+
+.personal {
+    background-color: #cccccc;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="dot"></span>
+            <span class="name">Shabas Hamad </span>
+            <span class="title">Software developer</span>
+        </div>
+        <nav>
+            <a href="resume.html">Resume</a>
+            <a href="skill.html">Skills</a>
+            <a href="personal.html">Personal</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="profile-container">
+            <img src="./images/Shaazzii.jpg" alt="shaazzi" class="profile-pic">
+            <div class="info">
+                <h1>Shabas Hamad Shanavas</h1>
+                <h2>A Bit About Me</h2>
+                <p>
+                    "I am an MCA student passionate about software development, data structures, and AI. Enjoys building efficent applications and exploring new technologies. my goal is to become a skilled software engineer specializing in AI-driven solutions."
+                </p>
+                    <div class="buttons">
+                    <a href="resume.html" class="btn resume">Resume</a>
+                    <a href="skill.html" class="btn outreach">Skills</a>
+                    <a href="personal.html" class="btn personal">Personal</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
