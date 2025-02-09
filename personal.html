@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: white;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #66c2ff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 14px;
+    color: gray;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f6f8f7;
+            text-align: center;
+            color: #222;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .navbar .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .navbar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        .navbar .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 120px);
+        }
+
+        .hero h4 {
+            font-size: 14px;
+            color: gray;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 {
+            font-size: 90px;
+            font-weight: bold;
+            color: #222;
+            line-height: 1.1;
+            font-family: 'Georgia', serif;
+        }
+
+        /* Image with Fading Effect */
+        .hero-image-container {
+            position: relative;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .hero-image {
+            width: 100%;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .hero-image-container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f6f8f7);
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 60px;
+            }
+            .navbar {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .navbar .nav-links {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="dot"></span>
+            <span class="name">Shabas Hamad </span>
+            <span class="title">Software developer</span>
+        </div>
+        <nav>
+            <a href="resume.html">Resume</a>
+            <a href="skill.html">Skills</a>
+            <a href="personal.html">Personal</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h4>SHABAS HAMAD – PORTFOLIO OF A</h4>
+        <h1>Software <br> Developer</h1>
+        
+        <!-- Image with Fade Effect -->
+        <div class="hero-image-container">
+            <img src="./images/Shaazzii.jpg" " alt="Software Developer" class="hero-image">
+        </div>
+    </div>
+
+</body>
+</html>

@@ -4,8 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px;
+        background: white;
+        align-items: center;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: #66c2ff;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+    }
+    
+    .name {
+        font-weight: bold;
+        font-size: 18px;
+        margin-right: 10px;
+    }
+    
+    .title {
+        font-size: 14px;
+        color: gray;
+    }
+    
+    
+    nav a {
+        text-decoration: none;
+        color: black;
+        margin-left: 20px;
+        font-weight: bold;
+    }
+    
+    nav a:hover {
+        text-decoration: underline;
+    }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="logo">
+            <span class="dot"></span>
+            <span class="name">Shabas Hamad </span>
+            <span class="title">Software developer</span>
+        </div>
+        <nav>
+            <a href="resume.html">Resume</a>
+            <a href="skill.html">Skills</a>
+            <a href="personal.html">Personal</a>
+        </nav>
+    </header>
+
     <img src="./images/SHABASCV.jpg" alt="resume">
 </body>
 </html>
